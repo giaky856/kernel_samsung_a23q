@@ -5,6 +5,9 @@ SUBLEVEL = 157
 EXTRAVERSION =
 NAME = "People's Front"
 
+# Rissu: Export PROJECT_NAME by default
+export PROJECT_NAME=a23
+
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
