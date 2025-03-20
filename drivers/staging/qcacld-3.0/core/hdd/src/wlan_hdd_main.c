@@ -196,11 +196,8 @@
 #include <cdp_txrx_ctrl.h>
 #include "wlan_global_lmac_if_api.h"
 
-#ifdef MODULE
-#define WLAN_MODULE_NAME  module_name(THIS_MODULE)
-#else
+// Rissu: force init wlan without sysfs!
 #define WLAN_MODULE_NAME  "wlan"
-#endif
 
 #ifdef TIMER_MANAGER
 #define TIMER_MANAGER_STR " +TIMER_MANAGER"
@@ -16644,7 +16641,6 @@ static void hdd_driver_unload(void)
 	osif_sync_deinit();
 
 	hdd_qdf_deinit();
-
 }
 
 #if defined (SEC_CONFIG_PSM_SYSFS)
