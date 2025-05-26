@@ -24,7 +24,6 @@
 #ifdef CONFIG_KSU_SUSFS_SUS_KSTAT
 #include <linux/susfs_def.h>
 #endif
->>>>>>> 6c2d02394dc4 (susfs-v1.5.7-backport-for-non-gki-unofficial)
 #include <linux/pkeys.h>
 #include <linux/mm_inline.h>
 #include <linux/freezer.h>

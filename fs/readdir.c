@@ -472,8 +472,6 @@ static int compat_fillonedir(struct dir_context *ctx, const char *name,
 
 	if (buf->result)
 		return -EINVAL;
-<<<<<<< HEAD
-=======
 #ifdef CONFIG_KSU_SUSFS_SUS_PATH
 	struct inode *inode;
 
